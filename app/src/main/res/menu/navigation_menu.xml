@@ -7,6 +7,12 @@
     </item>
 
     <item
+            android:id="@+id/weight"
+            android:title="Waga"
+            android:icon="@drawable/ic_baseline_person_24">
+    </item>
+
+    <item
             android:id="@+id/settings"
             android:title="Ustawienia"
             android:icon="@drawable/ic_baseline_settings_24">

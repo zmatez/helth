@@ -1,10 +1,13 @@
 package com.devbile.helth;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.drawerlayout.widget.DrawerLayout;
+import com.devbile.helth.functions.weight.WeightActivity;
+import com.devbile.helth.load.SplashActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
@@ -27,15 +30,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
         dLayout = (DrawerLayout) findViewById(R.id.dLayout);
         actionBarDT = new ActionBarDrawerToggle(this, dLayout, R.string.Open, R.string.Close);
         actionBarDT.setDrawerIndicatorEnabled(true);
@@ -54,6 +48,11 @@ public class MainActivity extends AppCompatActivity {
 
                 if (id == R.id.myprofile) {
                     Toast.makeText(MainActivity.this, "Mój Profil", Toast.LENGTH_SHORT).show();
+                }
+                if (id == R.id.weight) {
+                    Intent mainIntent = new Intent(MainActivity.this, WeightActivity.class);
+                    MainActivity.this.startActivity(mainIntent);
+                    MainActivity.this.finish();
                 }
                 else if (id == R.id.settings) {
                     Toast.makeText(MainActivity.this, "Ustawienia", Toast.LENGTH_SHORT).show();

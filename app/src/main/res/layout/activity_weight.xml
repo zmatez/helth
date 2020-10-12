@@ -27,7 +27,9 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
-        <include layout="@layout/fragment_first"/>
+        <include
+                layout="@layout/fragment_weight_cfg_start"
+                android:id="@+id/fragments"/>
 
     </RelativeLayout>
     <com.google.android.material.navigation.NavigationView
