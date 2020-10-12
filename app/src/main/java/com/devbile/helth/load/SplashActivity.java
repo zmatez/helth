@@ -24,7 +24,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(icicle);
         setContentView(R.layout.activity_splash);
         //usuwanie action bara
-        getSupportActionBar().hide();
+        //getSupportActionBar().hide();
 
         //wlaczanie MainActivity po czasie SPLASH_DISPLAY_LENGTH
         new Handler().postDelayed(new Runnable(){
