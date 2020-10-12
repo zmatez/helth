@@ -8,6 +8,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.devbile.helth.functions.weight.WeightActivity;
 import com.devbile.helth.load.SplashActivity;
+import com.devbile.helth.utils.NavBar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
@@ -20,8 +21,7 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
-    private DrawerLayout dLayout;
-    private ActionBarDrawerToggle actionBarDT;
+    private NavBar navBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,40 +30,8 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        dLayout = (DrawerLayout) findViewById(R.id.dLayout);
-        actionBarDT = new ActionBarDrawerToggle(this, dLayout, R.string.Open, R.string.Close);
-        actionBarDT.setDrawerIndicatorEnabled(true);
-
-        dLayout.addDrawerListener(actionBarDT);
-        actionBarDT.syncState();
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        final NavigationView nav_view = (NavigationView) findViewById(R.id.nav_view);
-
-        nav_view.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
-                int id = Item.getItemId();
-
-                if (id == R.id.myprofile) {
-                    Toast.makeText(MainActivity.this, "Mój Profil", Toast.LENGTH_SHORT).show();
-                }
-                if (id == R.id.weight) {
-                    Intent mainIntent = new Intent(MainActivity.this, WeightActivity.class);
-                    MainActivity.this.startActivity(mainIntent);
-                    MainActivity.this.finish();
-                }
-                else if (id == R.id.settings) {
-                    Toast.makeText(MainActivity.this, "Ustawienia", Toast.LENGTH_SHORT).show();
-                }
-                else if (id == R.id.feedback) {
-                    Toast.makeText(MainActivity.this, "Opinie :)", Toast.LENGTH_SHORT).show();
-                }
-
-                return false;
-            }
-        });
+        navBar = new NavBar();
+        navBar.createNavbar(this);
     }
 
     @Override
@@ -75,16 +43,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return actionBarDT.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
+        return navBar.onOptionsSelected(item) || super.onOptionsItemSelected(item);
     }
 }
