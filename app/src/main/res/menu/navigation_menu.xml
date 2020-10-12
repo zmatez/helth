@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/myprofile"
+        android:title="Mój profil"
+        android:icon="@drawable/ic_baseline_person_24">
+    </item>
+
+    <item
+            android:id="@+id/settings"
+            android:title="Ustawienia"
+            android:icon="@drawable/ic_baseline_settings_24">
+    </item>
+
+    <item
+            android:id="@+id/feedback"
+            android:title="Opinia"
+            android:icon="@drawable/ic_baseline_sentiment_very_satisfied_24">
+    </item>
+</menu>
