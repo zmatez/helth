@@ -28,7 +28,7 @@
         </com.google.android.material.appbar.AppBarLayout>
 
         <include
-                layout="@layout/fragment_weight_cfg_start"
+                layout="@layout/fragment_weight_desc"
                 android:id="@+id/fragments"/>
 
     </RelativeLayout>

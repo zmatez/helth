@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FirstFragment">
+
+    <ImageButton
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:layout_width="80dp"
+            android:layout_height="80dp" android:id="@+id/imageButton2"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:scaleType="fitXY" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.141"
+            app:layout_constraintVertical_bias="0.933" android:background="#00FFFFFF" android:rotation="180"/>
+    <TextView
+            android:id="@+id/textview_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waga"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="112dp"
+            android:fontFamily="sans-serif" android:textSize="36sp" app:layout_constraintHorizontal_bias="0.561"
+            android:textColor="#EA255D"/>
+    <TextView
+            android:text="Poddaj swoją wagę: "
+            android:layout_width="199dp"
+            android:layout_height="31dp" android:id="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_first" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.075" app:layout_constraintVertical_bias="0.072"
+            android:textAlignment="center" android:textAllCaps="false" android:textSize="14sp"/>
+    <ImageView
+            android:src="@drawable/healthcare"
+            android:layout_width="45dp"
+            android:layout_height="45dp" android:id="@+id/imageView2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.948"
+            app:layout_constraintVertical_bias="0.166" app:layout_constraintEnd_toStartOf="@+id/textview_first"/>
+    <EditText
+            android:layout_width="151dp"
+            android:layout_height="31dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/weightForm"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.826"
+            app:layout_constraintVertical_bias="0.285"/>
+    <ImageButton
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:layout_width="80dp"
+            android:layout_height="80dp" android:id="@+id/imageButton3"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:scaleType="fitXY" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.909"
+            app:layout_constraintVertical_bias="0.933" android:background="#00FFFFFF"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
