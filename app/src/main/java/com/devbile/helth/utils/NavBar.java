@@ -36,7 +36,9 @@ public class NavBar {
                 int id = Item.getItemId();
 
                 if (id == R.id.myprofile) {
-                    Toast.makeText(appCompatActivity, "Mój Profil", Toast.LENGTH_SHORT).show();
+                    Intent mainIntent = new Intent(appCompatActivity, MainActivity.class);
+                    appCompatActivity.startActivity(mainIntent);
+                    appCompatActivity.finish();
                 }
                 if (id == R.id.weight) {
                     Intent mainIntent = new Intent(appCompatActivity, WeightActivity.class);
