@@ -5,17 +5,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".FirstFragment">
+        tools:context=".functions.weight.WeightDescFragment">
 
-    <ImageButton
-            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            style="@style/Widget.AppCompat.ImageButton"
-            android:scaleType="fitXY" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.909"
-            app:layout_constraintVertical_bias="0.933" android:background="#00000000" android:id="@+id/imageButton1"/>
     <TextView
             android:id="@+id/textview_first"
             android:layout_width="wrap_content"
@@ -43,4 +34,20 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.948"
             app:layout_constraintVertical_bias="0.166" app:layout_constraintEnd_toStartOf="@+id/textview_first"/>
+
+    <Button
+            android:text="WŁĄCZ FUNKCJĘ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weightTurnOnButton"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.942"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            android:background="@color/colorPrimary"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:radius="5dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

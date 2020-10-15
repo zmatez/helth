@@ -36,14 +36,18 @@ public class NavBar {
                 int id = Item.getItemId();
 
                 if (id == R.id.myprofile) {
-                    Intent mainIntent = new Intent(appCompatActivity, MainActivity.class);
-                    appCompatActivity.startActivity(mainIntent);
-                    appCompatActivity.finish();
+                    if(appCompatActivity.getClass() != MainActivity.class) {
+                        Intent mainIntent = new Intent(appCompatActivity, MainActivity.class);
+                        appCompatActivity.startActivity(mainIntent);
+                        appCompatActivity.finish();
+                    }
                 }
                 if (id == R.id.weight) {
-                    Intent mainIntent = new Intent(appCompatActivity, WeightActivity.class);
-                    appCompatActivity.startActivity(mainIntent);
-                    appCompatActivity.finish();
+                    if(appCompatActivity.getClass() != WeightActivity.class) {
+                        Intent mainIntent = new Intent(appCompatActivity, WeightActivity.class);
+                        appCompatActivity.startActivity(mainIntent);
+                        appCompatActivity.finish();
+                    }
                 }
                 else if (id == R.id.settings) {
                     Toast.makeText(appCompatActivity, "Ustawienia", Toast.LENGTH_SHORT).show();

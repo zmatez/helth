@@ -5,7 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".FirstFragment">
+        tools:context=".functions.weight.WeightFormFragment">
 
     <ImageButton
             android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
