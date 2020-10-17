@@ -15,7 +15,7 @@ public class WeightFormFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.fragment_weight_desc, container, false);
+        return inflater.inflate(R.layout.fragment_weight_form, container, false);
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
