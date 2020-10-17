@@ -9,6 +9,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
+import com.devbile.helth.FirstFragment;
 import com.devbile.helth.R;
 import com.devbile.helth.SecondFragment;
 
@@ -25,10 +26,9 @@ public class WeightDescFragment extends Fragment {
         view.findViewById(R.id.weightTurnOnButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(), "Mój Profil", Toast.LENGTH_SHORT).show();
-                Log.i("WeightDescFragment","PRZYCISK KLIKNIETY");
+                NavHostFragment.findNavController(WeightDescFragment.this)
+                        .navigate(R.id.action_WeightDesc_to_WeightForm);
             }
         });
     }
-
 }

@@ -4,7 +4,8 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
+    <string name="weight_desc_label">Weight Description</string>
+    <string name="weight_form_label">Weight Form</string>
     <string name="previous">Previous</string>
 
     <string name="Open">NavBar</string>

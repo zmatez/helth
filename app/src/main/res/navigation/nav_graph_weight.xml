@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph_weight"
+            app:startDestination="@id/WeightDesc">
+
+    <fragment
+            android:id="@+id/WeightDesc"
+            android:name="com.devbile.helth.functions.weight.WeightDescFragment"
+            android:label="@string/weight_desc_label"
+            tools:layout="@layout/fragment_weight_desc">
+
+        <action
+                android:id="@+id/action_WeightDesc_to_WeightForm"
+                app:destination="@id/WeightForm"/>
+    </fragment>
+    <fragment
+            android:id="@+id/WeightForm"
+            android:name="com.devbile.helth.functions.weight.WeightFormFragment"
+            android:label="@string/weight_form_label"
+            tools:layout="@layout/fragment_weight_form">
+
+        <action
+                android:id="@+id/action_WeightForm_to_WeightDesc"
+                app:destination="@id/WeightDesc"/>
+    </fragment>
+</navigation>
