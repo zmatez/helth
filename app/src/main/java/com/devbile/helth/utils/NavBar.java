@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.devbile.helth.MainActivity;
 import com.devbile.helth.R;
+import com.devbile.helth.WorkInProgress;
 import com.devbile.helth.functions.weight.WeightActivity;
 import com.google.android.material.navigation.NavigationView;
 
@@ -53,7 +54,11 @@ public class NavBar {
                     Toast.makeText(appCompatActivity, "Ustawienia", Toast.LENGTH_SHORT).show();
                 }
                 else if (id == R.id.feedback) {
-                    Toast.makeText(appCompatActivity, "Opinie :)", Toast.LENGTH_SHORT).show();
+                    if(appCompatActivity.getClass() != WorkInProgress.class) {
+                        Intent mainIntent = new Intent(appCompatActivity, WorkInProgress.class);
+                        appCompatActivity.startActivity(mainIntent);
+                        appCompatActivity.finish();
+                    }
                 }
 
                 return false;
