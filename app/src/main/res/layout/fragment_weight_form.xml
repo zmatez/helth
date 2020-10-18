@@ -44,15 +44,15 @@
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.948"
             app:layout_constraintVertical_bias="0.166" app:layout_constraintEnd_toStartOf="@+id/textview_first"/>
     <EditText
-            android:layout_width="151dp"
-            android:layout_height="31dp"
+            android:layout_width="105dp"
+            android:layout_height="49dp"
             android:inputType="number"
             android:ems="10"
             android:id="@+id/weightForm"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.826"
-            app:layout_constraintVertical_bias="0.285"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.702"
+            app:layout_constraintVertical_bias="0.266"/>
     <ImageButton
             android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
             android:layout_width="80dp"
@@ -62,4 +62,12 @@
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.909"
             app:layout_constraintVertical_bias="0.933" android:background="#00FFFFFF"/>
+    <TextView
+            android:text="kg"
+            android:layout_width="27dp"
+            android:layout_height="23dp" android:id="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.833" app:layout_constraintVertical_bias="0.292"
+            android:textAlignment="center"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
