@@ -50,7 +50,11 @@ public class NavBar {
                     }
                 }
                 else if (id == R.id.settings) {
-                    Toast.makeText(appCompatActivity, "Ustawienia", Toast.LENGTH_SHORT).show();
+                    if(appCompatActivity.getClass() != WorkInProgress.class) {
+                        Intent mainIntent = new Intent(appCompatActivity, WorkInProgress.class);
+                        appCompatActivity.startActivity(mainIntent);
+                        appCompatActivity.finish();
+                    }
                 }
                 else if (id == R.id.feedback) {
                     if(appCompatActivity.getClass() != WorkInProgress.class) {
