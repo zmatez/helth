@@ -11,11 +11,6 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
-                android:name=".WorkInProgress"
-                android:label="@string/title_activity_work_in_progress"
-                android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity
                 android:name=".load.SplashActivity"
                 android:label="@string/app_name"
                 android:theme="@style/AppTheme.NoActionBar">
@@ -37,6 +32,16 @@
         </activity>
         <activity
                 android:name=".functions.weight.WeightActivity"
+                android:label="Waga"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".workInProgress.WorkInProgress"
                 android:label="Waga"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

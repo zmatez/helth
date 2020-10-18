@@ -1,7 +1,6 @@
 package com.devbile.helth.utils;
 
 import android.content.Intent;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
@@ -10,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.devbile.helth.MainActivity;
 import com.devbile.helth.R;
-import com.devbile.helth.WorkInProgress;
+import com.devbile.helth.workInProgress.WorkInProgress;
 import com.devbile.helth.functions.weight.WeightActivity;
 import com.google.android.material.navigation.NavigationView;
 

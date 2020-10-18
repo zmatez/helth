@@ -1,7 +1,8 @@
-package com.devbile.helth;
+package com.devbile.helth.workInProgress;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import com.devbile.helth.R;
 import com.devbile.helth.utils.NavBar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -10,7 +11,6 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 
 public class WorkInProgress extends AppCompatActivity {
-
     private NavBar navBar;
 
     @Override
