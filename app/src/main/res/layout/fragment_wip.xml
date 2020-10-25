@@ -8,7 +8,7 @@
         tools:context=".workInProgress.WipFragment">
 
     <TextView
-            android:text="Ta strona  jest jeszcze w przygotowaniu!"
+            android:text="Ta strona jest jeszcze w przygotowaniu!"
             android:layout_width="348dp"
             android:layout_height="75dp"
             android:id="@+id/wipText"

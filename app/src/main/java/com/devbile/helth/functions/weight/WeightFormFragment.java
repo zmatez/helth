@@ -28,6 +28,5 @@ public class WeightFormFragment extends Fragment {
                         .navigate(R.id.action_WeightForm_to_WeightDesc);
             }
         });
-
     }
 }

@@ -9,7 +9,7 @@
         android:background="@color/colorPrimaryDark">
 
     <TextView
-            android:text="56"
+            android:text="99"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/age"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -20,7 +20,7 @@
             app:layout_constraintVertical_bias="0.567"
             android:textColor="#FFFFFF"/>
     <TextView
-            android:text="Janusz Grzyb"
+            android:text="Name Surname"
             android:layout_width="128dp"
             android:layout_height="18dp" android:id="@+id/name"
             app:layout_constraintStart_toStartOf="parent"

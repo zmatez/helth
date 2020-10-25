@@ -12,21 +12,27 @@
             android:id="@+id/textview_first"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hello_first_fragment"
+            android:text="Witaj!"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/button_first"
-    />
-
-    <Button
-            android:id="@+id/button_first"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Next"
-            app:layout_constraintTop_toBottomOf="@id/textview_first"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-    />
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintVertical_bias="0.178" android:textSize="24sp"/>
+    <ImageButton
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:layout_width="70dp"
+            android:layout_height="70dp" android:id="@+id/button_first"
+            android:background="#00FFFFFF"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.811" app:layout_constraintVertical_bias="0.898"
+            android:scaleType="fitXY"/>
+    <TextView
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            android:layout_width="295dp"
+            android:layout_height="121dp" android:id="@+id/textView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintVertical_bias="0.358" android:textAlignment="textStart" android:textSize="18sp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
