@@ -11,7 +11,7 @@ import com.devbile.helth.R;
 import com.devbile.helth.SecondFragment;
 
 public class WeightFormFragment extends Fragment {
-
+    //wygramy to chlopakis
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
